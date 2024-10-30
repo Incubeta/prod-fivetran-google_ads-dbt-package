@@ -46,7 +46,7 @@ SELECT
     SAFE_CAST( NULL AS STRING ) Keyword_ID,
     SAFE_CAST( NULL AS STRING ) MCC_ID,
     SAFE_CAST( NULL AS STRING ) MCC_name,
-    SAFE_CAST( NULL AS FLOAT64 ) Maximum_CPM,
+    SAFE_CAST( NULL AS STRING ) Maximum_CPM,
     SAFE_CAST( ad_final_mobile_urls AS STRING ) Mobile_final_URL,
     SAFE_CAST( ad_network_type AS STRING ) Network,
     SAFE_CAST( customer_time_zone AS STRING ) Time_zone,
