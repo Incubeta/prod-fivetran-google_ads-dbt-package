@@ -34,14 +34,6 @@ vars:
 
 ### (Optional) Step 4: Additional configurations
 
-#### Disable reports:
-Individual reports can be disabled in the `dbt_project.yml` file.
-
-```yaml
-vars:
-    
-```
-
 #### Change output tables:
 The following vars can be used to change the output table names:
 
