@@ -1,7 +1,7 @@
 {{
   custom_config(
     alias=var('googleads_campaign_performance_v1_alias','googleads-campaign_performance-v1'),
-    field="TimePeriod")
+    field="Day")
 }}
 
 SELECT
@@ -26,9 +26,9 @@ SELECT
     SAFE_CAST( final_url_suffix AS STRING ) Final_URL_suffix,
     SAFE_CAST( interaction_event_types AS STRING) Interaction_types,
     SAFE_CAST( ad_network_type AS STRING ) Network,
-    SAFE_CAST( NULL AS STRING ) mcc_id,
-    SAFE_CAST( NULL AS STRING ) mcc_name,
-    SAFE_CAST( start_date AS STRING )	Start_date,
+    SAFE_CAST( NULL AS STRING ) MCC_ID,
+    SAFE_CAST( NULL AS STRING ) MCC_name,
+    SAFE_CAST( start_date AS STRING ) Start_date,
     SAFE_CAST( customer_time_zone AS STRING ) Time_zone,
     SAFE_CAST( absolute_top_impression_percentage AS STRING ) Absolute_Top_Impression____,
     SAFE_CAST( active_view_measurability AS STRING ) Active_view_measurability,
@@ -50,11 +50,11 @@ SELECT
     SAFE_CAST( impressions AS STRING ) Impressions,
     SAFE_CAST( interactions AS STRING ) Interactions,
     SAFE_CAST( search_absolute_top_impression_share AS STRING ) Search_absolute_top_impression_share,
-    SAFE_CAST( search_exact_match_impression_share AS STRING )	Search_exact_match_impression_share,
-    SAFE_CAST( search_impression_share AS STRING )	Search_impression_share,
-    SAFE_CAST( search_top_impression_share AS STRING )	Search_top_impression_share,
+    SAFE_CAST( search_exact_match_impression_share AS STRING ) Search_exact_match_impression_share,
+    SAFE_CAST( search_impression_share AS STRING ) Search_impression_share,
+    SAFE_CAST( search_top_impression_share AS STRING ) Search_top_impression_share,
     SAFE_CAST( top_impression_percentage AS STRING ) Top_Impression____,
-    SAFE_CAST( SAFE_DIVIDE( campaign_budget_total_amount_micros, 1000000 ) AS STRING )	Total_budget_amount,
+    SAFE_CAST( SAFE_DIVIDE( campaign_budget_total_amount_micros, 1000000 ) AS STRING ) Total_budget_amount,
     SAFE_CAST( value_per_conversion	AS STRING ) Value_per_conversion,
     SAFE_CAST( video_quartile_p_100_rate AS STRING ) Video_played_to_100_,
     SAFE_CAST( video_quartile_p_25_rate AS STRING )	Video_played_to_25_,
