@@ -42,6 +42,14 @@ The following vars can be used to change the output table names:
 |googleads_campaign_performance_v1_alias| google-campaign_performance-v1 |
 |googleads_keyword_performance_v1_alias| google-keyword_performance-v1  |
 
+#### Add custom fields:
+Ensure that the variable `googleads_custom_fields` is defined in the root project's `dbt_project.yml` file (this is your main repository).
+```yaml
+# dbt_project.yml (root project)
+vars:
+  googleads_custom_fields: "field1,field2,field3,field4,field5"
+
+```
 
 ### Resources:
 - Learn more about dbt [in the docs](https://docs.getdbt.com/docs/introduction)
