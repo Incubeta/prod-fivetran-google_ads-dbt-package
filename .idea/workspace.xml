@@ -4,9 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b2eb4101-381a-452e-8ca5-97d0ab2302a9" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="b2eb4101-381a-452e-8ca5-97d0ab2302a9" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -42,9 +40,9 @@
     "ACTIVE_CLOUD_PROJECT_NAME": "uk-tech-app-datapipeline-alpha",
     "ACTIVE_CLOUD_PROJECT_NUMBER": "341566395206",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "com.google.cloudcode.ide_session_index": "20241108_0001",
+    "com.google.cloudcode.ide_session_index": "20241111_0009",
     "git-widget-placeholder": "main",
-    "last_opened_file_path": "/Users/chigozie/Documents/GitHub/prod-fivetran-google_ads-dbt-package/macros",
+    "last_opened_file_path": "/Users/chigozie/Documents/GitHub/prod-fivetran-google_ads-dbt-package/models/google",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -55,9 +53,9 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/models/google" />
       <recent name="$PROJECT_DIR$/macros" />
       <recent name="$PROJECT_DIR$" />
-      <recent name="$PROJECT_DIR$/models/google" />
       <recent name="$PROJECT_DIR$/models" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
@@ -111,6 +109,7 @@
       <workItem from="1730286711079" duration="2556000" />
       <workItem from="1730296625688" duration="53000" />
       <workItem from="1731059248181" duration="622000" />
+      <workItem from="1731310266455" duration="10750000" />
     </task>
     <servers />
   </component>
