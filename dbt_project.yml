@@ -25,3 +25,4 @@ vars:
   googleads_campaign_performance_v_1_identifier: googleads_campaign_performance_v_1
   googleads_keyword_performance_v_1_identifier: googleads_keyword_performance_v_1
   googleads_ad_performance_basic_v_1_identifier: googleads_ad_performance_basic_v_1
+  googleads_ad_performance_conversions_v_1_identifier: googleads_ad_performance_conversions_v_1
