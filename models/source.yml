@@ -7,3 +7,5 @@ sources:
         identifier: "{{ var('googleads_campaign_performance_v_1_identifier', 'googleads_campaign_performance_v_1') }}"
       - name: googleads_keyword_performance_v_1
         identifier: "{{ var('googleads_keyword_performance_v_1_identifier', 'googleads_keyword_performance_v_1') }}"
+      - name: googleads_ad_performance_basic_v_1
+        identifier: "{{ var('googleads_ad_performance_basic_v_1_identifier', 'googleads_ad_performance_basic_v_1') }}"
