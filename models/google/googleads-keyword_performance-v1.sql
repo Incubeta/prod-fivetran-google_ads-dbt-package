@@ -60,5 +60,6 @@ SELECT
     SAFE_CAST( view_through_conversions AS STRING ) View_through_conversions,
     SAFE_CAST( video_views AS STRING ) Views,
     SAFE_CAST( all_conversions_value AS STRING ) Total_conversion_value,
+    {{ add_custom_fields() }}
 
  FROM {{ source('google', 'googleads_keyword_performance_v_1') }}
