@@ -29,7 +29,7 @@ SELECT
     SAFE_CAST( campaign_bidding_strategy AS STRING ) Campaign_Bid_strategy_ID,
     SAFE_CAST( campaign_name AS STRING ) Campaign,
     SAFE_CAST( campaign_serving_status AS STRING ) Campaign_serving_status,
-    SAFE_CAST( campaign_serving_status AS STRING ) Campaign_state,
+    SAFE_CAST( campaign_status AS STRING ) Campaign_state,
     SAFE_CAST( clicks AS STRING ) Clicks,
     SAFE_CAST( conversions_value_by_conversion_date AS STRING ) Conversion_value__by_conversion_time_,
     SAFE_CAST( conversions AS STRING ) Conversions,
@@ -42,7 +42,7 @@ SELECT
     SAFE_CAST( campaign_end_date AS STRING ) End_date,
     SAFE_CAST( engagements AS STRING ) Engagements,
     SAFE_CAST( manual_cpc_enhanced_cpc_enabled AS STRING ) Enhanced_CPC_enabled,
-    SAFE_CAST( ad_final_url_suffix AS STRING ) Final_URL_suffix,
+    SAFE_CAST( campaign_final_url_suffix AS STRING ) Final_URL_suffix,
     SAFE_CAST( impressions AS STRING ) Impressions,
     SAFE_CAST( interaction_event_types AS STRING ) Interaction_types,
     SAFE_CAST( interactions AS STRING ) Interactions,
@@ -59,6 +59,7 @@ SELECT
     SAFE_CAST( video_quartile_p_75_rate AS STRING ) Video_played_to_75_,
     SAFE_CAST( view_through_conversions AS STRING ) View_through_conversions,
     SAFE_CAST( video_views AS STRING ) Views,
+    SAFE_CAST( ad_final_url_suffix AS STRING ) Ad_Final_URL_suffix,
     {{ add_custom_fields() }}
 
 FROM {{ source('google', 'googleads_ad_performance_basic_v_1') }}
