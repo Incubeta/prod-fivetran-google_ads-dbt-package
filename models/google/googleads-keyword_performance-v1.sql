@@ -4,7 +4,7 @@
     field="Day")
 }}
 
-SELECT
+SELECT DISTINCT
     SAFE_CAST( date AS DATE ) Day,
     SAFE_CAST( absolute_top_impression_percentage AS STRING ) Absolute_Top_Impression____,
     SAFE_CAST( NULL AS STRING ) Active_view_average_CPM,

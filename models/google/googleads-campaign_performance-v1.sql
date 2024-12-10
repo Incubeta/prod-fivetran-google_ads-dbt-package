@@ -4,7 +4,7 @@
     field="Day")
 }}
 
-SELECT
+SELECT DISTINCT
     SAFE_CAST( date AS DATE ) Day,
     SAFE_CAST( customer_id AS STRING ) Customer_ID,
     SAFE_CAST( customer_descriptive_name AS STRING ) Customer_name,

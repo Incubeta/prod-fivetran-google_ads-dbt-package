@@ -4,7 +4,7 @@
     field="Day")
 }}
 
-SELECT
+SELECT DISTINCT
     SAFE_CAST(ad_id AS STRING) Ad_ID,
     SAFE_CAST(ad_group AS STRING) Ad_group,
     SAFE_CAST(ad_group_id AS STRING) Ad_group_ID,

@@ -4,7 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b2eb4101-381a-452e-8ca5-97d0ab2302a9" name="Changes" comment="" />
+    <list default="true" id="b2eb4101-381a-452e-8ca5-97d0ab2302a9" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -40,7 +42,7 @@
     "ACTIVE_CLOUD_PROJECT_NAME": "uk-tech-app-datapipeline-alpha",
     "ACTIVE_CLOUD_PROJECT_NUMBER": "341566395206",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "com.google.cloudcode.ide_session_index": "20241111_0009",
+    "com.google.cloudcode.ide_session_index": "20241210_0001",
     "git-widget-placeholder": "main",
     "last_opened_file_path": "/Users/chigozie/Documents/GitHub/prod-fivetran-google_ads-dbt-package/models/google",
     "node.js.detected.package.eslint": "true",
@@ -110,6 +112,9 @@
       <workItem from="1730296625688" duration="53000" />
       <workItem from="1731059248181" duration="622000" />
       <workItem from="1731310266455" duration="10750000" />
+      <workItem from="1731332773971" duration="1183000" />
+      <workItem from="1731681429970" duration="4000" />
+      <workItem from="1733828794775" duration="65000" />
     </task>
     <servers />
   </component>
