@@ -82,7 +82,7 @@ SAFE_CAST( Total_conversion_value AS FLOAT64 ) total_conversion_value,
 FROM
 /* source raw main table is referred as source_a and 
 openexchange table is being referred as exchange_source */
-  {{ ref('googleads-ad_performance_basic-v1') source_a
+  {{ ref('googleads-ad_performance_basic-v1') }} source_a
 
 LEFT JOIN exchange_source
 

@@ -42,7 +42,7 @@ SELECT
 FROM
 /* source raw main table is referred as source_a and 
 openexchange table is being referred as exchange_source */
-  {{ source('raw_main', 'googleads_landingpage_performance_conversions_v_1') source_a
+  {{ source('raw_main', 'googleads_landingpage_performance_conversions_v_1') }} source_a
 
 LEFT JOIN exchange_source
 
