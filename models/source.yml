@@ -5,8 +5,12 @@ sources:
     tables:
       - name: googleads_campaign_performance_v_1
         identifier: "{{ var('googleads_campaign_performance_v_1_identifier', 'googleads_campaign_performance_v_1') }}"
+        config:
+          event_time: date
       - name: googleads_keyword_performance_v_1
         identifier: "{{ var('googleads_keyword_performance_v_1_identifier', 'googleads_keyword_performance_v_1') }}"
+        config:
+          event_time: date
       - name: googleads_ad_performance_basic_v_1
         identifier: "{{ var('googleads_ad_performance_basic_v_1_identifier', 'googleads_ad_performance_basic_v_1') }}"
       - name: googleads_ad_performance_conversions_v_1
@@ -20,5 +24,13 @@ sources:
           event_time: Day
       - name: googleads_ad_performance_conversions_pmax_v_1
         identifier: "{{ var('raw_main_googleads_ad_performance_conversions_v_1_identifier', 'googleads-ad_performance_conversions_pmax-v1') }}"
+        config:
+          event_time: Day
+      - name: googleads_landingpage_performance_basic_v_1
+        identifier: "{{ var('raw_main_googleads_landingpage_performance_basic_v_1_identifier', 'googleads-landingpage_performance_basic-v1') }}"
+        config:
+          event_time: Day
+      - name: googleads_landingpage_performance_conversions_v_1
+        identifier: "{{ var('raw_main_googleads_landingpage_performance_conversions_v_1_identifier', 'googleads-landingpage_performance_conversions-v1') }}"
         config:
           event_time: Day
