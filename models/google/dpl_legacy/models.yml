@@ -17,6 +17,22 @@ models:
         granularity: day
       schema: PUB_base
       alias: googleads-ad_performance_basic-v1
+  - name: dpl_legacy-googleads-ad_performance_basic_pmax-v1
+    config:
+      materialized: incremental
+      incremental_strategy: microbatch
+      full_refresh: false
+      event_time: day
+      batch_size: day
+      begin: 2025-01-01
+      lookback: "{{var('days_ago', 1)}}"
+      omit_default_schema: true
+      partition_by: 
+        field: day
+        data_type: date
+        granularity: day
+      schema: PUB_base
+      alias: googleads-ad_performance_basic_pmax-v1
   - name: dpl_legacy-googleads-ad_performance_conversions-v1
     config:
       materialized: incremental
@@ -33,6 +49,22 @@ models:
         granularity: day
       schema: PUB_base
       alias: googleads-ad_performance_conversions-v1
+  - name: dpl_legacy-googleads-ad_performance_conversions_pmax-v1
+    config:
+      materialized: incremental
+      incremental_strategy: microbatch
+      full_refresh: false
+      event_time: day
+      batch_size: day
+      begin: 2025-01-01
+      lookback: "{{var('days_ago', 1)}}"
+      omit_default_schema: true
+      partition_by: 
+        field: day
+        data_type: date
+        granularity: day
+      schema: PUB_base
+      alias: googleads-ad_performance_conversions_pmax-v1
   - name: dpl_legacy-googleads-campaign_performance-v1
     config:
       materialized: incremental
