@@ -11,3 +11,14 @@ sources:
         identifier: "{{ var('googleads_ad_performance_basic_v_1_identifier', 'googleads_ad_performance_basic_v_1') }}"
       - name: googleads_ad_performance_conversions_v_1
         identifier: "{{ var('googleads_ad_performance_conversions_v_1_identifier', 'googleads_ad_performance_conversions_v_1') }}"
+  - name: raw_main
+    schema: "{{ var('raw_main_schema', 'RAW_main')}}"
+    tables:
+      - name: googleads_ad_performance_basic_pmax_v_1
+        identifier: "{{ var('raw_main_googleads_ad_performance_basic_v_1_identifier', 'googleads-ad_performance_basic_pmax-v1') }}"
+        config:
+          event_time: Day
+      - name: googleads_ad_performance_conversions_pmax_v_1
+        identifier: "{{ var('raw_main_googleads_ad_performance_conversions_v_1_identifier', 'googleads-ad_performance_conversions_pmax-v1') }}"
+        config:
+          event_time: Day

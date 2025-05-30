@@ -1,0 +1,16 @@
+version: 2
+models:
+ - name: googleads-keyword_performance-v1
+   config:
+      event_time: Day
+ - name: googleads-campaign_performance-v1
+   config:
+      event_time: Day
+ - name: googleads-ad_performance_conversions-v1
+   config:
+      event_time: Day
+ - name: googleads-ad_performance_basic-v1
+   config:
+      event_time: Day
+
+  
