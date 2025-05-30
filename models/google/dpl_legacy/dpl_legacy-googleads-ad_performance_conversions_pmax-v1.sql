@@ -43,7 +43,7 @@ SELECT
     {{add_fields("campaign")}} /* Replace with the report's campaign name field */
 
 FROM
-  {{ source('raw_main','googleads-ad_performance_conversions_pmax_v_1') source_a
+  {{ source('raw_main','googleads-ad_performance_conversions_pmax_v_1') }} source_a
 
 LEFT JOIN exchange_source
 
