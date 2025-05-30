@@ -1,6 +1,70 @@
 version: 2
 
 models: 
+  - name: 5t-googleads_keyword_performance_v_1
+    config:
+      materialized: incremental
+      incremental_strategy: microbatch
+      full_refresh: false
+      event_time: day
+      batch_size: day
+      begin: 2025-01-01
+      lookback: "{{var('days_ago', 1)}}"
+      omit_default_schema: true
+      partition_by: 
+        field: day
+        data_type: date
+        granularity: day
+      schema: PUB_base
+      alias: 5t-googleads_keyword_performance_v_1
+  - name: 5t-googleads_campaign_performance_v_1
+    config:
+      materialized: incremental
+      incremental_strategy: microbatch
+      full_refresh: false
+      event_time: day
+      batch_size: day
+      begin: 2025-01-01
+      lookback: "{{var('days_ago', 1)}}"
+      omit_default_schema: true
+      partition_by: 
+        field: day
+        data_type: date
+        granularity: day
+      schema: PUB_base
+      alias: 5t-googleads_campaign_performance_v_1
+  - name: dpl_legacy-googleads-landingpage_performance_conversions-v1
+    config:
+      materialized: incremental
+      incremental_strategy: microbatch
+      full_refresh: false
+      event_time: day
+      batch_size: day
+      begin: 2025-01-01
+      lookback: "{{var('days_ago', 1)}}"
+      omit_default_schema: true
+      partition_by: 
+        field: day
+        data_type: date
+        granularity: day
+      schema: PUB_base
+      alias: googleads-landingpage_performance_conversions-v1
+  - name: dpl_legacy-googleads-landingpage_performance_basic-v1
+    config:
+      materialized: incremental
+      incremental_strategy: microbatch
+      full_refresh: false
+      event_time: day
+      batch_size: day
+      begin: 2025-01-01
+      lookback: "{{var('days_ago', 1)}}"
+      omit_default_schema: true
+      partition_by: 
+        field: day
+        data_type: date
+        granularity: day
+      schema: PUB_base
+      alias: googleads-landingpage_performance_basic-v1
   - name: dpl_legacy-googleads-ad_performance_basic-v1
     config:
       materialized: incremental
